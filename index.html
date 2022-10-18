@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhak Dhak Go</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <!-- favicon -->
+    <link rel="icon" href="img/logo-black.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+</head>
+
+<body>
+    
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="height: 70px;">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <button type="button" class="btn btn-bg-success btn-outline-primary" style="font-weight: 3px; margin-left: 30px;"><a href="#" style="text-decoration: none; color: white;">Home</a></button>
+                        <button type="button" class="btn btn-outline-primary" style="margin-left: 15px;"><a href="#product" style="text-decoration: none; color: white;">Product</a></button>
+                        <button type="button" class="btn btn-outline-primary" style="margin-left: 15px;"><a href="#review" style="text-decoration: none; color: white;">Review</a></button>
+                        <button type="button" class="btn btn-outline-primary" style="margin-left: 15px;"><a href="#product" style="text-decoration: none; color: white;">Cart</a></button>
+                        <button type="button" class="btn btn-outline-primary" style="margin-left: 15px;"><a href="#help" style="text-decoration: none; color: white;">Help</a></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <!-- slider section -->
+
+  <div id="home">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="position: relative; float: left;">
+          <img class="d-block w-100" style="height: 90vh;" src="image/1.jpg" alt="First slide">
+          <img class="d-block w-50" style="position: absolute; top: 35%; left: 0; padding-right: 500px; margin-left: 200px;" src="image/logo.svg" alt="First slide">
+          <p style="position: absolute; top: 54%; left: 13%; color: white; font-weight: bold; font-size: 18px;">A motorcycling icon since 1932</p>
+        </div>
+        <div class="carousel-item" style="position: relative; float: left;">
+          <img class="d-block w-100" style="height: 90vh;" src="image/2.jpg" alt="Second slide">
+          <p style="position: absolute; top: 30%; left: 62%; color: white; font-size: 20px; font-weight: bold">The Story</p>
+          <p style="position: absolute; top: 37%; left: 62%; color: white; font-size: 18px; font-weight: normal;">What started in 1932 continues to deliver pure motorcycling experiences across generations of riders. Bullet, the quintessential Royal Enfield, is today the longest running motorcycle in history to be in continuous production. A unique, hand-painted fuel tank, the distinct thump and a standing testimony to Royal Enfield's philosophy of simple design and resilient build make Bullet a living legacy on two wheels.</p>
+        </div>
+        <div class="carousel-item" style="position: relative; float: left;">
+          <img class="d-block w-100" style="height: 90vh;" src="image/3.jpg" alt="Third slide">
+          <p style="position: absolute; top: 35%; left: 13%; color: white; font-size: 20px;
+          font-weight: bold;">Iconic Design</p>
+          <p style="position: absolute; top: 42%; left: 13%; color: white;">A laid-bare engine, handcrafted chrome detailing and <br> our signature hand-painted pinstripes make for one <br> exceptional-looking machine.</p>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- buy product section -->
+
+  <div class="mt-0 bg-secondary" style="height: 150vh;" id="product">
+    <div class="display-4 text-center m-3 mt-0 pt-3" style="font-size: 3rem; font-weight: bold; color: white;">Buy Products</div>
+
+    <div class="d-flex justify-content-around">
+      <div class="text-center m-5">
+
+        <div class="row">
+
+          <div class="col">
+            <div class="card mb-3" style="width: 18rem; height: 28rem;">
+              <img class="card-img-top" src="image/cart1.jpg" alt="Card image cap">
+              <div class="card-body" id="first">
+                <h5 class="card-title font-weight-bold" style="margin-top: 15px;">Bullet 350</h5>
+                <h4 class="font-weight-bold text-success" style="margin-top: 15px;">$5550</h4>
+                <div class="d-flex flex-column flex-wrap justify-content-center" style="margin-top: 15px;">
+                  <input type="number" min="1" class="form-control text-center m-2" value="1">
+                  <a class="btn btn-primary m-2" onclick="addToCart(`${'first'}`, `${'100'}`)">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card mb-3" style="width: 18rem; height: 28rem;">
+              <img class="card-img-top" src="image/cart2.jpg" alt="Card image cap">
+              <div class="card-body" id="second">
+                <h5 class="card-title font-weight-bold" style="margin-top: 15px;">Bullet 350ES</h5>
+                <h4 class="font-weight-bold text-success" style="margin-top: 15px;">$6000</h4>
+                <div class="d-flex flex-column flex-wrap justify-content-center" style="margin-top: 15px;">
+                  <input type="number" min="1" class="form-control text-center m-2" value="1">
+                  <a class="btn btn-primary m-2" onclick="addToCart(`${'second'}`, `${'200'}`)">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card mb-3" style="width: 18rem; height: 28rem;">
+              <img class="card-img-top" src="image/cart3.png" alt="Card image cap">
+              <div class="card-body" id="third">
+                <h5 class="card-title font-weight-bold" style="margin-top: 11px;">Continental GT</h5>
+                <h4 class="font-weight-bold text-success" style="margin-top: 15px;">$5000</h4>
+                <div class="d-flex flex-column flex-wrap justify-content-center" style="margin-top: 15px;">
+                  <input type="number" min="1" class="form-control text-center m-2" value="1">
+                  <a class="btn btn-primary m-2" onclick="addToCart(`${'third'}`, `${'300'}`)">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col">
+            <div class="card mb-3" style="width: 18rem; height: 27rem;">
+              <img class="card-img-top" src="image/cart4.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold" style="margin-top: 15px;">Classic 350</h5>
+                <h4 class="font-weight-bold text-success" style="margin-top: 15px;">$7100</h4>
+                <div class="d-flex flex-column flex-wrap justify-content-center" style="margin-top: 15px;">
+                  <input type="number" min="1" class="form-control text-center m-2" value="1">
+                  <a class="btn btn-primary m-2" onclick="addToCart(`${'fourth'}`, `${'400'}`)">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card mb-3" style="width: 18rem; height: 27rem;">
+              <img class="card-img-top" src="image/cart5.png" alt="Card image cap">
+              <div class="card-body" id="fifth">
+                <h5 class="card-title font-weight-bold" style="margin-top: 15px;">Scram 411</h5>
+                <h4 class="font-weight-bold text-success" style="margin-top: 15px;">$7050</h4>
+                <div class="d-flex flex-column flex-wrap justify-content-center" style="margin-top: 15px;">
+                  <input type="number" min="1" class="form-control text-center m-2" value="1">
+                  <a class="btn btn-primary m-2" onclick="addToCart(`${'fifth'}`, `${'500'}`)">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card mb-3" style="width: 18rem; height: 27rem;">
+              <img class="card-img-top" src="/image/cart6.png" alt="Card image cap">
+              <div class="card-body" id="sixth">
+                <h5 class="card-title font-weight-bold" style="margin-top: 15px;">Hunter 350</h5>
+                <h4 class="font-weight-bold text-success" style="margin-top: 15px;">$10000</h4>
+                <div class="d-flex flex-column flex-wrap justify-content-center" style="margin-top: 15px;">
+                  <input type="number" min="1" class="form-control text-center m-2" value="1">
+                  <a class="btn btn-primary m-2" onclick="addToCart(`${'sixth'}`, `${'600'}`)">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- pricing section -->
+      <div class="m-5 align-self-top">
+        <div class="card" style="width: 23rem;">
+          <h5 class="card-header display-4 text-center bg-success text-light" style="font-weight: bold; font-size: 40px;">Cart</h5>
+          <div class="card-body">
+            <div class="d-flex justify-content-between m-2 h4 text-muted font-weight-bold">
+              <p class="card-text m-3 h4 text-muted font-weight-bold">Total Product: <p class="text-muted" style="padding-top: 15px;" id="total-prod">0</p></p>
+            </div>
+            <div class="d-flex justify-content-between m-2 h4 text-muted font-weight-bold">
+              <p class="card-text m-3 h4 text-muted font-weight-bold">Total Price: <p id="total-price" style="padding-top: 15px;">0$</p></p>
+            </div>
+            <div class="d-flex justify-content-between m-2 h4 text-muted font-weight-bold">
+              <p class="card-text m-3 h4 text-muted font-weight-bold">Delivery Charge: <p id="delivery-cost" style="padding-top: 15px;">0$</p></p>
+            </div>
+
+            <hr>
+
+            <div class="d-flex justify-content-between m-2 h4 text-muted font-weight-bold">
+              <p class="card-text m-3 h4 text-muted font-weight-bold">Shipping Cost: <p id="shipping-cost" style="padding-top: 15px;">0$</p></p>
+            </div>
+            <div class="d-flex justify-content-between m-2 h4 text-muted font-weight-bold">
+              <p class="card-text m-3 h4 text-muted font-weight-bold">Tax: <p id="tax" style="padding-top: 15px;">0$</p></p>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between m-2 h4 text-muted font-weight-bold">
+              <p class="card-text m-3 h4 text-success font-weight-bold">Total Price: <p id="intotal" style="padding-top: 15px;">0$</p></p>
+            </div>
+
+            <div class="text-right">
+              <button class="btn btn-success" style="margin-left: 70px;">Check Out</button>
+              <button class="btn btn-danger" style="margin-left: 30px;" onclick="clearAll()">Clear</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="upcomming">
+    <div class="container" style="height: 80vh; ">
+
+        <h2 class="text-center" style="margin-top: 50px; font-weight: bold;">Upcomming Bikes </h2>
+
+        <div class="row" style="margin-top: 40px;">
+            <div class="col-md-4">
+                <div class="upcomming" style="background-color: grey; border-radius: 20px; height: 27rem; position: absolute;">
+                    <div class="product-im">
+                        <img style="position: relative; width: 350px; height: 200px; margin-top: 25px; margin-right: 25px;" src="image/up1.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 style="margin-top: 30px; text-align: center; color: white;">Hunter 360</h3>
+                        <button class="btn btn-warning" style="margin-top: 20px; margin-left: 140px;">Pre Order</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="upcomming" style="background-color: grey; border-radius: 20px; height: 27rem; position: absolute;">
+                    <div class="product-im">
+                        <img style="position: relative; width: 350px; height: 200px; margin-top: 30px; margin-right: 25px; margin-left: 25px;" src="image/up2.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 style="margin-top: 25px; text-align: center; color: white;">Meteor 350</h3>
+                        <button class="btn btn-warning" style="margin-top: 20px; margin-left: 153px;">Pre Order</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="upcomming" style="background-color: grey; border-radius: 20px; height: 27rem; position: absolute;">
+                    <div class="product-im">
+                        <img style="position: relative; width: 350px; height: 200px; margin-top: 25px; margin-right: 25px; margin-left: 20px;" src="image/up3.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 style="margin-top: 25px; text-align: center; color: white;">Continental GT 660</h3>
+                        <button class="btn btn-warning" style="margin-top: 20px; margin-left: 153px;">Pre Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="mt-5 text-center" style="height: 70vh; background-color: #6C757D;" id="review">
+  <div class="display-3 text-center" style="background-color: #0B5ED7; font-size: 45px; padding-top: 10px; padding-bottom: 10px; color: white; font-weight: bold;">Our Customers Review</div>
+  
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="card d-block" style="background-color: #6C757D; border: none; margin-top: 40px;">
+          <img class="card-img-top rounded" style="width: 30rem; border-radius: 50%;" src="image/review1.jpg" alt="Card image cap">
+          <div class="card-body d-block">
+            <h5 class="card-title" style="color: white; font-size: 20px;">Vladimir Putin</h5>
+            <p class="card-text" style="color: white;">Uraaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa!</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card d-block" style="background-color: #6C757D; border: none; margin-top: 40px;">
+          <img class="card-img-top" style="width: 15rem;" src="image/review2.jpg" alt="Card image cap">
+          <div class="card-body d-block">
+            <h5 class="card-title" style="color: white; font-size: 20px;">Donald Trump</h5>
+            <p class="card-text" style="color: white;">Emon is a very good boy. He recovered my twitter account.</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card d-block" style="background-color: #6C757D; border: none; margin-top: 40px;">
+          <img class="card-img-top" style="width: 20rem; margin-top: 30px;" src="image/review3.jpg" alt="Card image cap">
+          <div class="card-body d-block">
+            <h5 class="card-title" style="color: white; font-size: 20px;">Kim Jong-un</h5>
+            <p class="card-text" style="color: white;">I am inviting you to visit my country and to take my hospitality.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <footer id="help">
+    <div class="container" style="padding-top: 50px;">
+        <div class="row">
+            <div class="col-md-3" style="width: 50%;">
+                <div class="footer-col">
+                    <p>Dhak Dhak Go is a bike store that sells bikes online. We have different kinds of bike from different company's. We also have a blog where we post articles about bikes.</p>
+                    <div class="newsletter">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe to our newsletter to get the latest updates on our bikes and blog posts.</p>
+                        <form>
+                            <input type="email" name="email" placeholder="Enter your email">
+                            <button type="submit" name="submit"><i class="fa fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3" style="width: 50%;">
+                <div class="footer-col">
+                    <h4>Address</h4>
+                    <p>South Nalapara, Sadarghat, Chattogram</p>
+                    <p>Phone: +880 1521-527531</p>
+                    <p>Email: <a href="mailto:ebiswas7516@gmail.com">ebiswas7516@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+       <div class="accept-card">
+        <h6>We Accept Payment Via </h6>
+            <i class="fas fa-money-check-alt"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-paypal"></i>
+            <i class="far fa-credit-card"></i>
+       </div>
+       <hr>
+        <div class="copy-right text-center">
+            <p>Copyright© 2022 Dhak Dhak Go. All Rights Reserved.</p>
+            <p>Developed By: <a href="#" target="_blank" style="text-decoration: none;">Emon Biswas</a></p>
+        </div>
+    </div>
+</footer>
+
+  <script src="Scripts/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+
+</body>
